@@ -31,11 +31,24 @@
         }
     }
 }
-.container {
-}
-.text {
-}
-.main-btn {
-}
-.img {
+
+@media(max-width:920px) {
+    .about {
+        padding: 40px 0;
+        &__body {
+            flex-direction: column;
+            .text {
+                width: 100%;
+                box-sizing: border-box;
+                margin: 0 0 30px;
+            }
+            .img {
+                width: 100%;
+                max-width: 560px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }

@@ -1,0 +1,65 @@
+.command {
+    padding: 60px 0;
+    box-sizing: border-box;
+    // .command__title
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    // .command__cards
+
+    &__cards {
+        display: flex;
+        align-items: stretch;
+        margin: 0 -15px;
+        flex-wrap: wrap;
+    }
+
+    // .command__card
+
+    &__card {
+        width: calc(33.33% - 30px);
+        margin: 0 15px 30px;
+        .img {
+            width: 100%;
+            height: 460px;
+            overflow: hidden;
+            border-radius: 15px;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                display: inline-block;
+            }
+        }
+        .name {
+            padding: 15px 0;
+            p {
+                font-size: 24px;
+                margin: 0;
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+            span {
+                display: block;
+                font-size: 16px;
+                font-weight: 400;
+                
+            }
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    .command {
+        &__card {
+            width: calc(50% - 30px);
+            .img {
+                height: 55vw;
+                max-height: 600px;
+                min-height: 320px;
+            }
+        }
+    }
+}
