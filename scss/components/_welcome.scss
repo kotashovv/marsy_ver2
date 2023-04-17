@@ -1,0 +1,103 @@
+.welcome {
+    padding: 60px 0 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    // .welcome__body
+    
+    &__body {
+        display: flex;
+        align-items: center;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            z-index: -1;
+            top: 30px;
+            height: 100%;
+            background-color: #e6e6e6;
+            width: 60%;
+            opacity: .3;
+        }
+        .text {
+            position: relative;
+            width: 40%;
+            margin-right: 50px;
+            h1 {
+                margin: 0;
+                font-size: 48px;
+                line-height: 1.1;
+                margin-bottom: 30px;
+            }
+            p {
+                margin: 0;
+                line-height: 1.3;
+                max-width: 450px;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+        
+        .img {
+            width: 60%;
+            img, video {
+                display: inline-block;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+
+@media(max-width:1024px) {
+    .welcome {
+        &__body {
+            .text {
+                h1 {
+                    font-size: 32px;
+                    margin-bottom: 15px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+        
+    }
+}
+
+@media(max-width:768px) {
+    .welcome {
+        padding: 80px 0 20px;
+        &__body {
+            flex-direction: column;
+            align-items: center;
+            &::before {
+                width: calc(100% - 20px);
+                left: 10px;
+                top: 10px;
+                height: 75%;
+            }
+            .text {
+                width: 100%;
+                text-align: center;
+                h1 {
+                    font-size: 26px;
+                }
+                p {
+                    max-width: none;
+                }
+                margin: 0 0 45px;
+            }
+            .img {
+                margin: 0;
+                width: 100%;
+                img, video {
+                    max-width: 90%;
+                    margin: 0 auto;
+                    display: block;
+                }
+            }
+        }
+    }
+}

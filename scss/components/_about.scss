@@ -1,0 +1,41 @@
+.about {
+    padding: 60px 0;
+    box-sizing: border-box;
+    // .about__body
+
+    &__body {
+        display: flex;
+        align-items: center;
+        .text {
+            width: 49%;
+            margin-right: 50px;
+            h1 {
+                font-size: 36px;
+                margin: 0;
+                margin-bottom: 30px;
+            }
+            p {
+                margin: 0;
+                line-height: 1.4;
+                margin-bottom: 30px;
+                font-size: 18px;
+            }
+        }
+        .img {
+            width: 60%;
+            img {
+                max-width: 100%;
+                display: inline-block;
+                border-radius: 30px;
+            }
+        }
+    }
+}
+.container {
+}
+.text {
+}
+.main-btn {
+}
+.img {
+}
