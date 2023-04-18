@@ -372,6 +372,11 @@ body {
   }
 }
 
+.main-btn.reverse-color {
+  background-color: #fff;
+  color: #009687;
+}
+
 .section-title {
   margin: 0;
   font-size: 32px;

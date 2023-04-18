@@ -1,0 +1,344 @@
+.login-page {
+  padding: 80px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.login-page__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  max-width: 720px;
+  overflow: hidden;
+  border-radius: 30px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2);
+  height: 420px;
+}
+
+.login-page__wrap .login {
+  padding: 30px 15px;
+  height: auto;
+  width: 30%;
+  position: relative;
+  -webkit-transition: .35s ease;
+  -o-transition: .35s ease;
+  transition: .35s ease;
+}
+
+.login-page__wrap .login::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  -webkit-transition: .45s ease;
+  -o-transition: .45s ease;
+  transition: .45s ease;
+  opacity: 1;
+  background: #009687;
+  background: -webkit-gradient(linear, left top, right top, from(#009687), color-stop(50%, rgba(0, 150, 135, 0.85)), to(rgba(0, 150, 135, 0.753939)));
+  background: -webkit-linear-gradient(left, #009687 0%, rgba(0, 150, 135, 0.85) 50%, rgba(0, 150, 135, 0.753939) 100%);
+  background: -o-linear-gradient(left, #009687 0%, rgba(0, 150, 135, 0.85) 50%, rgba(0, 150, 135, 0.753939) 100%);
+  background: linear-gradient(90deg, #009687 0%, rgba(0, 150, 135, 0.85) 50%, rgba(0, 150, 135, 0.753939) 100%);
+}
+
+.login-page__wrap .login .hello {
+  -webkit-transition: .35s ease;
+  -o-transition: .35s ease;
+  transition: .35s ease;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.login-page__wrap .login .hello h3 {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.login-page__wrap .login .hello p {
+  font-size: 14px;
+}
+
+.login-page__wrap .login .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.login-page__wrap .login .form h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.login-page__wrap .login .form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+.login-page__wrap .login .form form a {
+  color: #009687;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.login-page__wrap .login .form form .action {
+  width: 100%;
+}
+
+.login-page__wrap .login .form form .action button.main-btn {
+  width: 100%;
+  max-width: none;
+}
+
+.login-page__wrap .login .form form input {
+  background-color: #f5f5f5;
+  padding: 5px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.login-page__wrap .login .form form input:last-of-type {
+  margin-bottom: 10px;
+}
+
+.login-page__wrap .signup {
+  -webkit-transition: .35s ease;
+  -o-transition: .35s ease;
+  transition: .35s ease;
+  padding: 30px 15px;
+  height: auto;
+  width: 30%;
+  position: relative;
+}
+
+.login-page__wrap .signup::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  -webkit-transition: .45s ease;
+  -o-transition: .45s ease;
+  transition: .45s ease;
+  opacity: 1;
+  background: #009687;
+  background: -webkit-gradient(linear, left top, right top, from(#009687), color-stop(50%, rgba(0, 150, 135, 0.85)), to(rgba(0, 150, 135, 0.753939)));
+  background: -webkit-linear-gradient(left, #009687 0%, rgba(0, 150, 135, 0.85) 50%, rgba(0, 150, 135, 0.753939) 100%);
+  background: -o-linear-gradient(left, #009687 0%, rgba(0, 150, 135, 0.85) 50%, rgba(0, 150, 135, 0.753939) 100%);
+  background: linear-gradient(90deg, #009687 0%, rgba(0, 150, 135, 0.85) 50%, rgba(0, 150, 135, 0.753939) 100%);
+}
+
+.login-page__wrap .signup .hello {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: .35s ease;
+  -o-transition: .35s ease;
+  transition: .35s ease;
+  color: #fff;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.login-page__wrap .signup .hello h3 {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.login-page__wrap .signup .hello p {
+  font-size: 14px;
+}
+
+.login-page__wrap .signup .form {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.login-page__wrap .signup .form h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.login-page__wrap .signup .form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+.login-page__wrap .signup .form form a {
+  color: #009687;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.login-page__wrap .signup .form form .action {
+  width: 100%;
+}
+
+.login-page__wrap .signup .form form .action button.main-btn {
+  width: 100%;
+  max-width: none;
+}
+
+.login-page__wrap .signup .form form input {
+  background-color: #f5f5f5;
+  padding: 5px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.login-page__wrap .signup .form form input:last-of-type {
+  margin-bottom: 10px;
+}
+
+.login-page__wrap .signup .active {
+  width: 30%;
+}
+
+.login-page__wrap .signup .form {
+  display: none;
+}
+
+.login-page__wrap.login-active .login {
+  width: 70%;
+}
+
+.login-page__wrap.login-active .login::before {
+  opacity: 0;
+}
+
+.login-page__wrap.login-active .login .hello {
+  display: none;
+}
+
+.login-page__wrap.login-active .login .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.login-page__wrap.login-active .signup {
+  width: 30%;
+}
+
+.login-page__wrap.signup-active .signup {
+  width: 70%;
+}
+
+.login-page__wrap.signup-active .signup::before {
+  opacity: 0;
+}
+
+.login-page__wrap.signup-active .signup .hello {
+  display: none;
+}
+
+.login-page__wrap.signup-active .signup .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
