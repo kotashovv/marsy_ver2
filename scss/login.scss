@@ -232,3 +232,45 @@
     }
 }
 
+@media(max-width:640px) {
+    .login-page {
+        &__wrap {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            &.login-active {
+                .login {
+                    box-sizing: border-box;
+                    width: 100%;
+                    max-width: none;
+                }
+                .signup {
+                    width: 100%;
+                    max-width: none;
+                }
+            }
+            &.signup-active {
+                .login {
+                    width: 100%;
+                    box-sizing: border-box;
+                    .hello {
+                        display: flex;
+                    }
+                    .form {
+                        display: none;
+                    }
+                }
+                .signup {
+                    width: 100%;
+                     box-sizing: border-box;
+                    .form {
+                        width: 100%;
+                        form {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

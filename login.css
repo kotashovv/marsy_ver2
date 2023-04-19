@@ -342,3 +342,50 @@
   display: -ms-flexbox;
   display: flex;
 }
+
+@media (max-width: 640px) {
+  .login-page__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+  }
+  .login-page__wrap.login-active .login {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    max-width: none;
+  }
+  .login-page__wrap.login-active .signup {
+    width: 100%;
+    max-width: none;
+  }
+  .login-page__wrap.signup-active .login {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .login-page__wrap.signup-active .login .hello {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .login-page__wrap.signup-active .login .form {
+    display: none;
+  }
+  .login-page__wrap.signup-active .signup {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .login-page__wrap.signup-active .signup .form {
+    width: 100%;
+  }
+  .login-page__wrap.signup-active .signup .form form {
+    width: 100%;
+  }
+}
