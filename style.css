@@ -342,8 +342,21 @@ template {
   display: none;
 }
 
+.section-title {
+  margin: 0;
+}
+
+.section-title .title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  display: block;
+  font-size: 32px;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
+  background: #fefefe;
 }
 
 .container {
@@ -1171,6 +1184,263 @@ body {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+  }
+}
+
+.project-page {
+  padding: 60px 0;
+}
+
+.project-page .section-title {
+  margin-bottom: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.project-page .section-title .title {
+  margin-bottom: 10px;
+}
+
+.project-page .section-title p {
+  margin: 0;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000c9;
+}
+
+.project-page .section-title p span {
+  font-weight: 600;
+  color: #000;
+}
+
+.project-page__add {
+  margin-bottom: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #00000022;
+}
+
+.project-page__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.project-page__item {
+  border-radius: 10px;
+  width: calc(33.33% - 30px);
+  margin: 0 15px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px #dfdfdf;
+          box-shadow: 0 0 10px #dfdfdf;
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-page__item button.delete-project {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  border: none;
+  background-color: transparent;
+  background-image: url(../assets/imgs/icons/delete.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-page__item .title {
+  margin-bottom: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 100px;
+}
+
+.project-page__item .title h2 {
+  font-size: 20px;
+  margin: 0;
+  color: #000;
+}
+
+.project-page__item .details .detail-item p {
+  display: block;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.project-page__item .img {
+  height: 240px;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.project-page__item .img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 960px) {
+  .project-page__item {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 690px) {
+  .project-page__body {
+    margin: 0;
+  }
+  .project-page__item {
+    margin: 0 0 30px;
+    width: 100%;
+    display: block;
+  }
+}
+
+.part-form {
+  overflow: hidden;
+  padding: 40px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.part-form__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.part-form__body .title {
+  max-width: 460px;
+  width: 50%;
+  margin-right: 80px;
+  text-align: right;
+}
+
+.part-form__body .title h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 1.3;
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.part-form__body .title p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  display: block;
+  margin: 0;
+}
+
+.part-form__body .form {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.part-form__body .form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -7.5px;
+}
+
+.part-form__body .form form .action {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 7.5px;
+}
+
+.part-form__body .form form label {
+  display: block;
+  margin: 0 7.5px 15px;
+  width: 100%;
+}
+
+.part-form__body .form form label input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 14px 15px;
+  background: #FAFAFA;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+.part-form__body .form form label textarea {
+  width: 100%;
+  padding: 14px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 120px;
+  border: none;
+  resize: none;
+  background: #FAFAFA;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.part-form__body .form form label.col-2 {
+  width: calc(50% - 15px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 920px) {
+  .part-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .part-form__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .part-form__body .title {
+    max-width: none;
+    margin: 0 0 30px;
+    width: 100%;
+    text-align: left;
+  }
+  .part-form__body .title h4 {
+    font-size: 36px;
+  }
+  .part-form__body .form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .part-form__body .form form label.col-2 {
+    width: 100%;
   }
 }
 

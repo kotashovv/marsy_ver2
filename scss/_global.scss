@@ -2,8 +2,21 @@
 
 $mon: 'Montserrat', sans-serif;
 $color: #009687;
+
+.section-title {
+    margin: 0;
+    .title {
+        font-family: $mon;
+        font-weight: 600;
+        margin: 0;
+        display: block;
+        font-size: 32px;
+    }
+}
+
 body {
     font-family: $mon;
+    background: #fefefe;
 }
 .container {
     max-width: 1270px;
