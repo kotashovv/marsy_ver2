@@ -1,0 +1,108 @@
+.blog {
+    padding: 40px 0;
+    box-sizing: border-box;
+    // .blog__items
+
+    &__items {
+        display: flex;
+        align-items: stretch;
+        margin: 0 -15px;
+        flex-wrap: wrap;
+        padding: 40px 0;
+    }
+
+    // .blog__item
+
+    &__item {
+        width: calc(33.33% - 30px);
+        margin: 0 15px 30px;    
+        text-decoration: none;
+        color: inherit;
+        box-shadow: 0 0 10px #e7e7e7;
+        border-radius: 15px;
+        transition: .45s ease;
+        &:hover {
+            box-shadow: 0 0 15px #cfcfcf;
+            .img {
+                img {
+                    transform: scale(1.07);
+                    filter: grayscale(0);
+                }
+            }
+        }
+        .title {
+            padding: 10px;
+            h2 {
+                font-size: 26px;
+                font-weight: 600;
+                margin: 0;
+            }
+        }
+        .text {
+            padding: 10px;
+            p {
+                margin: 0;
+                line-height: 1.4;
+                font-weight: 500;
+                font-size: 14px;
+            }
+        }
+        .date {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #0000006e;
+            box-sizing: border-box;
+            padding: 10px;
+            color: #fff;
+            font-size: 14px;
+        }
+        .img {
+            overflow: hidden;
+            position: relative;
+            height: 160px;
+            img {
+                height: 100%;
+                width: 100%;
+                display: block;
+                object-fit: cover;
+                filter: grayscale(.15);
+                transition: .35s ease;
+            }
+        }
+        .action {
+            display: flex;
+            justify-content: flex-end;
+            box-sizing: border-box;
+            margin-top: 10px;
+            padding: 0 10px;
+            margin-bottom: 10px;
+            span {
+                font-weight: 600;
+                font-size: 16px;
+                color: $color;
+            }
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    .blog {
+        &__items {
+        }
+        &__item {
+            width: calc(50% - 30px);
+        }
+    }
+}
+@media(max-width:620px) {
+    .blog {
+        &__items {
+            margin: 0;
+        }
+        &__item {
+            width: 100%;
+            margin: 0 0 30px;
+        }
+    }
+}
