@@ -39,6 +39,7 @@
             &:last-child {
                 margin-bottom: 0;
                 margin-top: auto;
+                flex-direction: column;
             }
             span {
                 display: block;
@@ -58,7 +59,16 @@
     }
 
     // .personal__history
-
+    &__delete {
+        padding: 20px 0;
+        box-sizing: border-box;
+        a {
+            font-size: 14px;
+            display: block;
+            width: fit-content;
+            color: #c60000;
+        }
+    }
     &__history {
         padding: 60px 0 20px;
         h2 {

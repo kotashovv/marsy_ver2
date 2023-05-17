@@ -41,6 +41,13 @@ body {
         background-color: #fff;
         color: $color;
     }
+    &.red-btn {
+        background-color: transparent;
+        color: #c60000;
+        text-decoration: underline;
+        font-size: 14px;
+        padding: 0;
+    }
 }
 
 .section-title {
